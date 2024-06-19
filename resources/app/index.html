@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe</title>
+<style>
+  .board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 使棋盤垂直居中 */
+  }
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 300px;
+  }
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .restart-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: none;
+  }
+</style>
+</head>
+<body>
+  <div class="board-container">
+    <div class="board">
+      <div class="cell" id="cell-0"></div>
+      <div class="cell" id="cell-1"></div>
+      <div class="cell" id="cell-2"></div>
+      <div class="cell" id="cell-3"></div>
+      <div class="cell" id="cell-4"></div>
+      <div class="cell" id="cell-5"></div>
+      <div class="cell" id="cell-6"></div>
+      <div class="cell" id="cell-7"></div>
+      <div class="cell" id="cell-8"></div>
+    </div>
+  </div>
+  <div class="container">
+    <button class="restart-button" id="restart-button">Restart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

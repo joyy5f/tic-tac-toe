@@ -1,0 +1,13 @@
+{
+  "name": "tic tac toe 0.0.4",
+  "version": "1.0.0",
+  "description": "A simple tic tac toe",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-packager": "^17.1.2"
+  }
+}
